@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 
 //Get router
 router.get("/", function (req, res) {
@@ -16,12 +16,11 @@ router.get("/", function (req, res) {
 
 //Post router
 router.post("/api/burgers", function (req, res) {
-    burger.create([
-        "burger_name", "devoured"
-    ], [
-            req.body.burger_name, req.body.devoured
-        ], function (result) {
-            res.json({ id: result.insertId });
+    burger.create(
+        req.body.burger_name
+        , function (result) {
+            res.redirect("/");
+            console.log(result);
         });
 });
 
