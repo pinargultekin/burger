@@ -9,7 +9,7 @@
 ## Abstract
 Eat-Da-Burger is a restaurant app that users can add a burger name. Also once users add their burgers they can move their burgers to the devoured burgers category via clicking the "Devour" button.
 
-Here is the link of the application : https://eat-da-burger-pnr.herokuapp.com/
+Here is the link of the application : https://floating-savannah-66233.herokuapp.com/
 
 <a name="overview"></a>
 ## Coding Overview
