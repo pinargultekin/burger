@@ -1,7 +1,7 @@
 <div class="container">
 
 <div class="jumbotron text-center glow">
-    <img src="/assets/img/burrger.svg" height="200">
+    <img src="/assets/img/burrger.svg" height="300">
     {{!-- <a href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by roserodionova - www.freepik.com</a> --}}
 <h1 >Welcome to the Eat-Da-Burger</h1>
 
@@ -19,13 +19,14 @@
 
         <h2>Burgers List</h2>
         
-<ul>
-  {{#each burgers}}
-     {{#unless devoured}}
-     <li>{{this.id }} {{ this.burger_name}}<button class="btn btn-success" id="burger-sbt"> Devour!</button> <hr></li>
-    {{/unless}}
-  {{/each}}
-</ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <form action="/api/burgers/{{id}}" method="POST">
+        <li>{{this.id}}. {{this.burger_name}} <button class="btn btn-success" id="devour-smt" type="submit">Devour!</button><hr></li>
+        </form>
+        {{/unless}}
+        {{/each}}
+
 
     </div>
 
@@ -36,7 +37,7 @@
 <ul>
   {{#each burgers}}
  {{#if devoured}}
- <li>{{this.id }} {{ this.burger_name}}</li>
+ <li>{{this.id }} {{ this.burger_name}} <hr></li>
  
     {{/if}}
   {{/each}}
@@ -57,13 +58,6 @@
     <input type="text" id="burger_name" name="burger_name">
      <button class="btn btn-info" type="submit">Add Burger</button>
   </div>
-
-  {{!-- <div class="form-group">
-    <label for="slee">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked>Devoured!<br>
-    <input type="radio" name="devoured" value="0">Not Devoured yet!
-  </div> --}}
-
  
 </form>
 </div>
