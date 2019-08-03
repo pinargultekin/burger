@@ -6,7 +6,6 @@ body{
     font-family: 'Limelight', cursive;
     background-color: #2e2e2e; 
     color:#f7ff00;
-    
 }
 .col-lg-6, .col-lg-5{
 margin:20px;
@@ -15,8 +14,10 @@ text-align: center;
 background-color: #fcff80;
 border-radius: 2rem;
 }
-
-
+li.devoured{
+color:gray;
+font-weight: bold;
+}
 .col-lg-12{
 padding: 35px;
 text-align: center;
@@ -27,6 +28,7 @@ ul, li{
     list-style-type: none;
     text-align: left;
     font-size: 20px;
+    
 }
 .btn-success{
     float: right;
@@ -35,46 +37,31 @@ h2{
     margin-bottom: 8rem;
     font-weight: bold;
     color: rgb(49, 48, 48);
-    font-size: 40px;
-  
+    font-size: 40px;  
+}
+input{
+  width: 400px;
+  height: 40px;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #e4ff01;
 }
 label{
   font-size: 20px;
 }
 h1{
     color: #FFDD1B;
-  
-}
+  }
 h1:hover{
-    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
   -moz-animation: neon3 1.5s ease-in-out infinite alternate;
   animation: neon3 1.5s ease-in-out infinite alternate;
 }
 @-webkit-keyframes neon3 {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
-    }
+  from {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
   }
-
-/* .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+  to {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
   }
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f9ff01, 0 0 40px #f9ff01, 0 0 50px #f9ff01, 0 0 60px #f9ff01, 0 0 70px #f9ff01;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #feffcd, 0 0 40px #feffcd, 0 0 50px #feffcd, 0 0 60px #feffcd, 0 0 70px#feffcd, 0 0 80px #feffcd;
-    }
-  } */
-/* background-color: #2e2e2e;  */
+  }
